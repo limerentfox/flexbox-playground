@@ -1,0 +1,58 @@
+#main-container {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+// Canvas
+
+
+#canvas-container {
+  flex: auto;
+  display: flex;
+
+}
+
+#canvas {
+  padding: 4em;
+  display: flex;
+  flex: 0 1 40px;
+  background-color: #353848;
+}
+
+
+// Form
+section#instructions {
+  flex: auto;
+
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  flex-shrink: 1;
+  padding: 0.8em;
+}
+
+input {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+label {
+  margin-left: 0.3em;
+}
