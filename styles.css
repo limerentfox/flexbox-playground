@@ -1,8 +1,10 @@
+body {
+  margin: 0 0 auto;
+}
+
 #main-container {
   font-family: sans-serif;
   font-size: 0.8em;
-  display: flex;
-  flex-direction: column;
 
 }
 
@@ -10,29 +12,38 @@
 
 // Canvas
 
-
-#canvas-container {
-  flex: auto;
-  display: flex;
-
+section#playground {
+  height: 600px;
 }
 
+
 #canvas {
-  padding: 4em;
   display: flex;
-  flex: 0 1 40px;
+  height: 40em;
+  padding: 0;
+
+
+
   background-color: #353848;
 }
 
+.canvas-item {
+  margin: 2%;
+  padding: 4%;
+  background-color: #a3c9c7;
 
-// Form
-section#instructions {
-  flex: auto;
 
 }
 
-form {
 
+
+// Form
+
+form h3 {
+  text-align: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
