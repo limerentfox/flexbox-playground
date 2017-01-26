@@ -1,10 +1,12 @@
 class Form {
   constructor() {
     this.$canvas = $('div#canvas')
+    this.$canvasItems = $('.canvas-item')
     this.$flexDirection = $('input[name=flex-direction]')
     this.$flexWrap = $('input[name=flex-wrap]')
     this.$justifyContent = $('input[name=justify-content]')
     this.$alignItems = $('input[name=align-items]')
+    this.$slider = $('input#slider')
   }
 
   updateState(){
@@ -12,6 +14,7 @@ class Form {
     this.updateFlexWrap()
     this.updateJustifyContent()
     this.updateAlignItems()
+    this.sliderValue()
   }
 
   updateFlexDirection(){
@@ -41,4 +44,15 @@ class Form {
       this.$canvas.css("align-items", `${$cssAttribute}`)
     })
   }
+
+  sliderValue(){
+    this.$slider.change((event) => {
+      let $number = $(event.target).val()
+      $('span#range').text(`${$number}%`)
+      this.$canvasItems.css("padding", `${$number}%`)
+    })
+  }
+
+
+
 }
